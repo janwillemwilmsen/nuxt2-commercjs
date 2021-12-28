@@ -5,6 +5,7 @@
       <div class="section">
         <h1 class="title">Products</h1>
         <product-list :products="products"></product-list>
+        <pre>{{ products }}</pre>
       </div>
     </div>
   </div>

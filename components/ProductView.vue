@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="card-image">
-      <picture class="image"
+      <!-- <picture class="image"
         ><source :srcset="product.media.source" media="(max-width: 1023px)" />
         <source :srcset="product.media.source" media="(min-width: 1024px)" />
         <img
@@ -10,7 +10,7 @@
           height="326"
           alt="Cotton Sweater"
           style=""
-      /></picture>
+      /></picture> -->
     </div>
     <div class="card-content">
       <div class="media">

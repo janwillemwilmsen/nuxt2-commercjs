@@ -23,8 +23,8 @@
 export default {
   props: {
     slanted: { type: Boolean, required: true, defaultValue: false },
-    text: { type: String, required: true, defaultValue: '' },
-    icon: { type: String, required: true, defaultValue: '' },
+    text: { type: String, required: true, defaultValue: "" },
+    icon: { type: String, required: true, defaultValue: "" },
   },
 }
 </script>

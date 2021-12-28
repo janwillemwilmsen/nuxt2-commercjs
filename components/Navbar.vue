@@ -54,10 +54,10 @@ export default {
     this.handleScroll()
 
     // Event listener check for scrollY
-    window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener("scroll", this.handleScroll)
   },
   beforeDestroy() {
-    window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener("scroll", this.handleScroll)
   },
   methods: {
     handleScroll() {

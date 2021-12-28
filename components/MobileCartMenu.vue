@@ -40,7 +40,7 @@ export default {
   methods: {
     setCartView() {
       const isOpened = this.$store.state.isCartOpened
-      this.$store.commit('setCartView', !isOpened)
+      this.$store.commit("setCartView", !isOpened)
     },
   },
 }

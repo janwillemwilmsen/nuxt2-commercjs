@@ -16,7 +16,7 @@ export default {
     async fetchCart() {
       try {
         const cart = await this.$commerce.cart.retrieve()
-        this.$store.commit('setCart', cart)
+        this.$store.commit("setCart", cart)
       } catch (error) {
         // eslint-disable-next-line
         console.log('Error (default.vue): ', error)
@@ -28,7 +28,7 @@ export default {
 
 <style lang="scss">
 body {
-  font-family: 'Cabin Condensed', sans-serif;
+  font-family: "Cabin Condensed", sans-serif;
   overflow-x: hidden;
 }
 

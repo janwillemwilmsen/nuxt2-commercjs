@@ -22,7 +22,7 @@
 <script>
 export default {
   props: {
-    fillColor: { type: String, default: '#FFF', required: true },
+    fillColor: { type: String, default: "#FFF", required: true },
   },
 }
 </script>

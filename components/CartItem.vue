@@ -1,7 +1,7 @@
 <template>
   <tr>
     <td class="image-cell is-hidden-mobile">
-      <img :src="item.media.source" />
+      <!-- <img :src="item.media.source" /> -->
     </td>
     <td>{{ item.name }}</td>
     <td>{{ item.price.formatted_with_symbol }}</td>
@@ -43,7 +43,7 @@ export default {
       this.showSpinner = true
       try {
         const res = await this.$commerce.cart.remove(itemId)
-        this.$store.commit('setCart', res.cart)
+        this.$store.commit("setCart", res.cart)
       } catch (error) {
         // eslint-disable-next-line
         console.log(error)
@@ -56,7 +56,7 @@ export default {
         const res = await this.$commerce.cart.update(this.item.id, {
           quantity: this.quantity,
         })
-        this.$store.commit('setCart', res.cart)
+        this.$store.commit("setCart", res.cart)
       } catch (error) {
         // eslint-disable-next-line
         console.log(error)

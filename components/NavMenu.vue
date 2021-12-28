@@ -40,19 +40,24 @@ export default {
     return {
       pages: [
         {
-          url: '/',
-          name: 'Home',
-          key: 'home',
+          url: "/",
+          name: "Home",
+          key: "home",
         },
         {
-          url: '/products',
-          name: 'Products',
-          key: 'products',
+          url: "/products",
+          name: "Products",
+          key: "products",
         },
         {
-          url: '/contact',
-          name: 'Contact',
-          key: 'contact',
+          url: "/contact",
+          name: "Contact",
+          key: "contact",
+        },
+        {
+          url: "/categorie",
+          name: "Categorie",
+          key: "categorie",
         },
       ],
     }

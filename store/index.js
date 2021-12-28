@@ -17,7 +17,7 @@ export const getters = {
     return state.cart === null ? 0 : state.cart.total_items
   },
   getHostedCheckoutUrl(state) {
-    return state.cart === null ? '' : state.cart.hosted_checkout_url
+    return state.cart === null ? "" : state.cart.hosted_checkout_url
   },
 }
 

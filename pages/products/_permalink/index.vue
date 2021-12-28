@@ -4,7 +4,7 @@
     <div class="container">
       <div class="columns is-multiline">
         <div class="column is-6">
-          <picture class="image"
+          <!-- <picture class="image"
             ><source
               :srcset="product.media.source"
               media="(max-width: 1023px)" />
@@ -17,7 +17,7 @@
               height="326"
               alt="Cotton Sweater"
               style=""
-          /></picture>
+          /></picture> -->
         </div>
         <div class="column is-6 py-6 px-6">
           <p class="title is-4">{{ product.name }}</p>
@@ -27,6 +27,7 @@
             {{ product.price.formatted_with_symbol }}
           </p>
           <Stars :rating="4" />
+          <p><AddToCartBtn :product="product" /></p>
         </div>
       </div>
     </div>
@@ -38,7 +39,7 @@ export default {
   async asyncData({ params, $commerce }) {
     const { permalink } = params
     const product = await $commerce.products.retrieve(permalink, {
-      type: 'permalink',
+      type: "permalink",
     })
     return { product }
   },

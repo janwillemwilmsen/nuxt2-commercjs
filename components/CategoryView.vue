@@ -1,5 +1,8 @@
 <template>
-  <p>{{ category.name }}</p>
+  <div>
+    <p>{{ category.name }}</p>
+    <p>{{ category.description }}</p>
+  </div>
 </template>
 
 <script>
