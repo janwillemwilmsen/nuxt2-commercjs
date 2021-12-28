@@ -63,7 +63,7 @@ export default {
 
   async asyncData({ params, $commerce }) {
     const categorySlug = params.slug
-    console.log(categorySlug)
+    // console.log(categorySlug)
     // const { slug } = params
     const { data: products } = await $commerce.products.list({
       // type: "slug",
